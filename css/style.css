@@ -1,0 +1,1093 @@
+/* Обнуление стилей */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+
+/* Подключение шрифтов */
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../font/Comfortaa-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../font/Nunito-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../font/Onest-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url('../font/Unbounded-VariableFont_wght.ttf');
+}
+
+
+/* Создание контейнеров */
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container-max {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+/* Паддинги 120 для блоков */
+
+.py-120 {
+    padding: 120px 0;
+}
+
+/* Заголовки блоков */
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.title-h2 {
+    font-family: 'Nunito';
+    font-size: 48px;
+    font-weight: 700;
+    color: #410B0B;
+}
+
+.title-h3 {
+    font-family: 'Nunito';
+    font-size: 32px;
+    font-weight: 400;
+    color: #525637;
+    width: 926px;
+    text-align: center;
+}
+
+
+body {
+    background-color: #D4C99E;
+}
+
+
+
+/* Стили шапки */
+
+header {
+    background-color: #525637;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.header-h2 {
+    font-size: 40px;
+    font-family: 'Unbounded';
+    color: #EAEAC7;
+    font-weight: 400;
+}
+
+.header-nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.header-nav-a {
+    font-size: 18px;
+    font-family: 'Onest';
+    color: #EAEAC7;
+}
+
+.header-nav-a:hover {
+    transform: scale(1.1);
+}
+
+.header-tel {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.header-tel-p {
+    color: #EAEAC7;
+    font-size: 18px;
+    font-family: 'Onest';
+}
+
+.header-tel-line {
+    width: 2px;
+    height: 40px;
+    background-color: #EAEAC750;
+    border-radius: 20px;
+}
+
+.header-tel-a {
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 25px;
+    background-color: #A43A30;
+    color: #EAEAC7;
+    font-family: 'Onest';
+    border: 1px solid #A43A30;
+    font-size: 18px;
+}
+
+.header-tel-a:hover {
+    background-color: #A43A3040;
+}
+
+
+
+/* Стили баннера */
+
+main {
+    background: url('../image/bg-ban.png') no-repeat center;
+    background-size: cover;
+    height: 1078px;
+    width: 100%;
+}
+
+.main-block {
+    position: relative;
+}
+
+.pos-ban {
+    position: absolute;
+    top: 159px;
+    right: 25px;
+    z-index: 2;
+}
+
+.ban-text {
+    position: absolute;
+    left: 0;
+    top: 323px;
+    width: 1412px;
+    height: 482px;
+    padding: 64px 0 48px 260px;
+    background-color: #D4C99E;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 0 200px 200px 0;
+}
+
+.ban-text-h1 {
+    font-family: 'Comfortaa';
+    font-size: 64px;
+    font-weight: 700;
+    color: #A43A30;
+}
+
+.ban-text-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.ban-text-p {
+    width: 690px;
+    font-family: 'Nunito';
+    font-size: 28px;
+    color: #525637;
+}
+
+.ban-text-btn {
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 55px;
+    background-color: #525637;
+    color: #D4C99E;
+    font-family: 'Nunito';
+    border: 1px solid #525637;
+    font-size: 28px;
+}
+
+.ban-text-btn:hover {
+    background-color: transparent;
+    color: #525637;
+}
+
+.bg-text {
+    position: absolute;
+    width: 50%;
+    height: 482px;
+    background-color: #D4C99E;
+    top: 323px;
+    left: 0;
+}
+
+
+
+/* Стили блока с инф. о компании */
+
+.about {
+    background-color: #7A794E;
+}
+
+.ab-pos {
+    position: relative;
+}
+
+.about-block {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+}
+
+.title-ab {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.title-ab-h2 {
+    font-family: 'Nunito';
+    font-size: 48px;
+    font-weight: 700;
+    color: #EAEAC7;
+}
+
+.title-ab-h3 {
+    font-family: 'Nunito';
+    font-size: 32px;
+    font-weight: 400;
+    color: #D4C99E;
+}
+
+.about-main {
+    display: flex;
+    gap: 80px;
+}
+
+.about-img {
+    border-radius: 200px 200px 20px 20px;
+}
+
+.about-text {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.about-text-p {
+    font-size: 36px;
+    font-family: 'Nunito';
+    color: #D4C99E;
+}
+
+.sp-name {
+    color: #EAEAC7;
+    font-weight: 700;
+}
+
+.sp-red {
+    color: #EAEAC7;
+    font-weight: 700;
+    background: linear-gradient(transparent 55%, rgba(164, 58, 48, 0.8) 55%);
+    padding: 0 4px;
+}
+
+.ab-pos-img {
+    position: absolute;
+}
+
+#api1 {
+    top: 0;
+    left: 29px;
+}
+
+#api2 {
+    top: 0;
+    left: 155px;
+}
+
+#api3 {
+    bottom: 0;
+    right: 0;
+}
+
+
+
+/* Стили блока с преимуществами */
+
+.feat-pos {
+    position: relative;
+}
+
+.feat-pos-img {
+    position: absolute;
+    top: 0;
+    right: 782px;
+}
+
+.features-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 54px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.title-h2 {
+    font-family: 'Nunito';
+    font-size: 48px;
+    font-weight: 700;
+    color: #410B0B;
+}
+
+.title-h3 {
+    font-family: 'Nunito';
+    font-size: 32px;
+    font-weight: 400;
+    color: #525637;
+    width: 926px;
+    text-align: center;
+}
+
+.feat-card-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    z-index: 1;
+}
+
+.feat-card {
+    display: flex;
+    flex-direction: column;
+}
+
+#fc1 {
+    background: url('../image/feat-card-bg1.png');
+    width: 880px;
+    height: 320px;
+    border-radius: 32px 32px 32px 200px;
+    padding: 72px 166px;
+    color: #EAEAC7;
+}
+
+#fc2 {
+    background: url('../image/feat-card-bg2.png');
+    width: 480px;
+    height: 320px;
+    border-radius: 300px 300px 32px 32px;
+    color: #EAEAC7;
+    padding-top: 90px;
+    align-items: center;
+}
+
+#fc3 {
+    background: url('../image/feat-card-bg3.png');
+    width: 415px;
+    height: 320px;
+    border-radius: 32px 32px 32px 32px;
+    color: #EAEAC7;
+    padding: 0 76px;
+    justify-content: center;
+}
+
+#fc4 {
+    background: url('../image/feat-card-bg4.png');
+    width: 945px;
+    height: 320px;
+    border-radius: 240px 32px 32px 32px;
+    color: #A43A30;
+    text-align: right;
+    padding: 0 177px;
+    justify-content: center;
+}
+
+.feat-card-h2 {
+    font-family: 'Nunito';
+    font-size: 96px;
+    font-weight: 600;
+}
+
+.feat-card-p {
+    font-family: 'Nunito';
+    font-size: 24px;
+}
+
+
+
+/* Стили блока с продукцией */
+
+.production {
+    position: relative;
+    background-color: #F1EBD5;
+    border-radius: 100px 0 100px 0;
+}
+
+.prod-pos-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.prod-block {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+}
+
+.prod-card-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prod-card {
+    z-index: 2;
+    width: 440px;
+    height: 608px;
+    border-radius: 20px;
+    position: relative;
+}
+
+#pc1 {
+    background: url('../image/prod-card-bg1.png');
+}
+
+#pc2 {
+    width: 470px;
+    height: 650px;
+    background: url('../image/prod-card-bg2.png');
+}
+
+#pc3 {
+    background: url('../image/prod-card-bg3.png');
+}
+
+.prod-card-tape-img {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 190px;
+}
+
+.prod-card-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: url('../image/prod-card-text-bg.png') center;
+    width: 413px;
+    height: 189px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    padding: 22px 28px;
+}
+
+.prod-card-h3 {
+    font-family: 'Nunito';
+    font-size: 32px;
+    font-weight: 700;
+    color: #1B1100;
+}
+
+.prod-card-p {
+    font-family: 'Onest';
+    font-size: 18px;
+    font-weight: 400;
+    color: #1B1100;
+    line-height: 23px;
+}
+
+.prod-btn {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 55px;
+    background-color: #525637;
+    color: #D4C99E;
+    font-family: 'Nunito';
+    border: 1px solid #525637;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.prod-btn:hover {
+    background-color: transparent;
+    color: #525637;
+}
+
+
+
+/* Стили галереи */
+
+.gal-pos {
+    position: relative;
+}
+
+.gal-pos-img {
+    position: absolute;
+}
+
+#gpi1 {
+    top: 0;
+    left: 0;
+}
+
+#gpi2 {
+    right: 0;
+    bottom: 128px;
+}
+
+.gal-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.gal-marquee {
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.gal-marquee::before,
+.gal-marquee::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    z-index: 3;
+}
+
+.gal-marquee::before {
+    left: 0;
+    background: linear-gradient(90deg, #D4C99E, #D4C99E00);
+}
+
+.gal-marquee::after {
+    right: 0;
+    background: linear-gradient(270deg, #D4C99E, #D4C99E00);
+}
+
+.gal-mar-track {
+    display: flex;
+    width: max-content;
+    animation: run 30s linear infinite;
+}
+
+#gmt2 {
+    animation-direction: reverse;
+}
+
+.gal-mar-tr-img {
+    height: 240px;
+    margin-right: 24px;
+}
+
+@keyframes run {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/* Стили блока с отзывами */
+
+.comment {
+    position: relative;
+}
+
+.com-pos {
+    position: relative;
+}
+
+.com-pos-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.com-line-pos {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #1B1100;
+    top: 298px;
+    left: 0;
+}
+
+.com-block {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.com-block-card-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-end;
+}
+
+.com-card-line-block {
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.com-card-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 335px;
+}
+
+.com-line {
+    width: 2px;
+    height: 24px;
+    background-color: #1B1100;
+}
+
+.com-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #A8A878;
+    border-radius: 15px;
+    align-items: center;
+    height: 450px;
+}
+
+.circule-40 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2A2A2A;
+}
+
+.com-card-content-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 286px;
+}
+
+.com-card-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.com-card-text-main {
+    font-family: 'Onest';
+    font-weight: 300;
+    font-size: 16px;
+    color: #1B1100;
+    line-height: 20px;
+}
+
+.com-card-more {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 16px;
+    color: #E3CA66;
+    line-height: 20px;
+}
+
+.com-card-acc-block {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.com-card-img {
+    border-radius: 5px;
+}
+
+.com-card-acc-text-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.com-acc-text-name {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.com-acc-name {
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size: 22px;
+    color: #1B1100;
+}
+
+.star-disabled {
+    opacity: 30%;
+}
+
+.com-acc-date {
+    opacity: 50%;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 16px;
+    color: #1B1100;
+}
+
+.com-map-btn {
+    display: flex;
+    gap: 8px;
+    padding: 8px 24px;
+    border: 1px solid #A43A30;
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+.com-map-btn:hover {
+    background-color: #A43A3020;
+}
+
+.com-map-btn-text {
+    font-family: 'Onest';
+    font-weight: 400;
+    font-size: 16px;
+    color: #525637;
+}
+
+
+
+/* Стили блока обртаной связи */
+
+.feedback {
+    position: relative;
+}
+
+.feedback-block {
+    padding: 10px;
+    background-color: #D4C99E;
+    box-shadow: 0 4px 53px #00000025;
+    z-index: 1;
+    position: relative;
+}
+
+.feedback-block-min {
+    width: 1380px;
+    border: solid 3px #1B1100;
+    padding: 60px 40px;
+    display: flex;
+    gap: 90px;
+}
+
+.feedback-bg {
+    position: absolute;
+    bottom: 0;
+    height: 526px;
+    width: 100%;
+    background: url('../image/feedback-bg.png') repeat center;
+}
+
+.feedback-bg-grad {
+    position: absolute;
+    bottom: 0;
+    height: 108px;
+    width: 100%;
+    background: linear-gradient(to top, #525637, #52563700);
+}
+
+.title-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    width: 530px;
+}
+
+.title-feed-h2 {
+    font-family: 'Nunito';
+    font-size: 48px;
+    font-weight: 700;
+    color: #410B0B;
+}
+
+.title-feed-h3 {
+    font-family: 'Nunito';
+    font-size: 24px;
+    font-weight: 400;
+    color: #525637;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.feedback-form-block {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feedback-input {
+    padding: 16px 0 16px 16px;
+    font-family: 'Onest';
+    font-size: 18px;
+    font-weight: 400;
+    color: #525637;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: none;
+    border: solid 1px #694E0A;
+}
+
+.feedback-input::placeholder {
+    font-family: 'Onest';
+    font-size: 18px;
+    font-weight: 400;
+    color: #52563750;
+}
+
+.feedback-input:focus {
+    background-color: #EAEAC730;
+    border: 1px solid #EAEAC7;
+    outline: 1px solid #EAEAC7;
+}
+
+
+.feedback-input:focus:hover {
+    background-color: #EAEAC730;
+}
+
+.feedback-input:hover {
+    background-color: #694E0A30;
+}
+
+.feedback-lable {
+    font-family: 'Onest';
+    font-size: 20px;
+    font-weight: 400;
+    color: #1B1100;
+}
+
+.check-block {
+    display: flex;
+    gap: 16px;
+}
+
+.feedback-check-input {
+    appearance: none;
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    background-color: #2D2F23;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: 0;
+}
+
+.feedback-check-input:checked {
+    background-color: #792820;
+    background-image: url('../image/check.png');
+}
+
+.feedback-lable-check {
+    font-family: 'Onest';
+    font-size: 20px;
+    font-weight: 400;
+    color: #1B1100;
+    width: 629px;
+}
+
+.feedback-lable-check-link {
+    font-family: 'Onest';
+    font-size: 20px;
+    font-weight: 400;
+    color: #1B1100;
+    font-weight: 500;
+}
+
+.feedback-lable-check-link:hover {
+    color: #A43A30;
+}
+
+.feedback-btn-sub {
+    background-color: #A43A30;
+    padding: 12px 40px;
+    font-family: 'Onest';
+    font-size: 18px;
+    font-weight: 400;
+    color: #D4C99E;
+    border-radius: 30px;
+    border: solid 1px #A43A30;
+}
+
+.feedback-btn-sub:hover {
+    color: #A43A30;
+    background-color: transparent;
+}
+
+
+
+/* Стили подвала */
+
+footer {
+    background-color: #545738;
+}
+
+.footer-pos {
+    position: relative;
+}
+
+.footer-pos-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-block {
+    padding-top: 160px;
+    padding-bottom: 68px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+}
+
+.footer-top {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 64px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer-h2 {
+    font-size: 40px;
+    font-family: 'Unbounded';
+    color: #EAEAC7;
+    font-weight: 400;
+}
+
+.footer-social {
+    display: flex;
+    padding: 0 8px;
+    gap: 32px;
+}
+
+.footer-link:hover {
+    transform: translateY(-6px);
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-list-h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Nunito';
+    color: #EAEAC7;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-nav-a {
+    font-size: 18px;
+    font-family: 'Onest';
+    color: #EAEAC7;
+}
+
+.footer-nav-p {
+    font-size: 18px;
+    font-family: 'Onest';
+    color: #EAEAC7;
+}
+
+.footer-nav-a:hover {
+    transform: translateY(-6px);
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff75;
+}
+
+.footer-p {
+    font-size: 16px;
+    font-family: 'Nunito';
+    color: #EAEAC7;
+}
